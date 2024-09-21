@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+
+<body>
+
+    <form action="./task1.html" target="_blank" novalidate >
+        <label for="fullname">Fullname</label>
+        <input type="text" id="fullname" name="Name" placeholder="Enter your fullname">
+<br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="smt@gmail.com" required>
+<br>
+        <!-- <label for="test">Just to test</label>
+        <input type="text" name="tt" id="test" value="test"> -->
+
+        <br>
+        <label for="date">Date of Birth</label>
+        <input type="date" name="dateOfBirth" id="date">
+        <br>
+
+        <p>Enter your Gender</p>
+        <input type="radio" name="sex" id="gender" value="Male">
+        <label for="gender">Male</label>
+        <input type="radio" name="sex" id="Female" value="Female">
+        <label for="Female">Female</label>
+        <input type="radio" name="sex" id="NaN" value="Nan">
+        <label for="NaN">Do not prefer </label>
+        
+        <p>Enter your school</p>
+        <input type="checkbox" name="sc1" id="site" value="site2">
+        <label for="site">Site</label>
+
+        <input type="checkbox" name="sc2" id="sb" value="sb">
+        <label for="sb">SB</label>
+        
+        <input type="checkbox" name="sc3" id="sl" value="sl">
+        <label for="sl">SL</label>
+        <br>
+
+        <p>City where you live:</p>
+
+        <select name="city" id="city">
+        <option value="LA" id>Los Angeles</option>
+        <option value="SF">San Fransisco</option>
+        <option value="NY">New York</option>
+    </select>
+<br>
+
+<label for="pp">Profile Picture</label>
+<input type="file" name="PP" id="pp" placeholder="Picture">
+
+<br>
+<label for="tel">Phone Number</label>
+<input type="tel" name="tel" id="tel" placeholder="xxx-xxx-xx-xx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+
+
+
+<br>
+
+<label for="rank">Rate my project(betwwen 0 -10)</label>
+<input type="range" name="rng" id="rank" min="0" max="10">
+<br>
+
+
+<label for="time">Available Time</label>
+<input type="time" name="time" id="time">
+<br>
+<label for="c">Comments</label>
+<textarea name= "c" id = "cmd" rows="10" cols="30"></textarea>
+    <br>
+
+
+
+
+
+
+
+
+<br>
+        <input type="submit" name="submit" id="submit" value="Gonder">
+        <br>
+        <input type="submit" name="submit" value="Gonder maile" formaction="mailto:shamilabb19@gmail.com" formmethod="post" formenctype="text/plain">
+        <br>
+        <input type="reset" name="reset" value="Tezele">
+    </form>
+
+</body>
+</html>
