@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
 
     <title>Contact</title>
 
@@ -18,10 +18,14 @@
 
 <body>
 
-    <form action="./index.html" target="_blank" novalidate >
-        <label for="fullname">Fullname</label>
-        <input type="text" id="fullname" name="Name" placeholder="Enter your fullname">
-<br>
+  
+
+            <form action="./index.html" target="_blank" novalidate >
+            <label for="fullname">Fullname</label>
+            <input type="text" id="fullname" name="Name" placeholder="Enter your fullname">
+
+  
+
         <label for="email">Email</label>
         <input type="email" name="email" id="email" placeholder="smt@gmail.com" required>
 <br>
@@ -29,18 +33,22 @@
         <input type="text" name="tt" id="test" value="test"> -->
 
         <br>
+ 
         <label for="date">Date of Birth</label>
         <input type="date" name="dateOfBirth" id="date">
+   
         <br>
+        <p style="margin: 10px;">Enter your Gender</p>
+ <div class="g">
 
-        <p>Enter your Gender</p>
-        <input type="radio" name="sex" id="gender" value="Male">
-        <label for="gender">Male</label>
-        <input type="radio" name="sex" id="Female" value="Female">
-        <label for="Female">Female</label>
-        <input type="radio" name="sex" id="NaN" value="Nan">
-        <label for="NaN">Do not prefer </label>
-        
+    <input type="radio" name="sex" id="gender" value="Male">
+    <label for="gender">Male</label>
+    <input type="radio" name="sex" id="Female" value="Female">
+    <label for="Female">Female</label>
+    <input type="radio" name="sex" id="NaN" value="Nan">
+    <label for="NaN">Do not prefer </label>
+    
+ </div>
         <p>Enter your school</p>
         <input type="checkbox" name="sc1" id="site" value="site2">
         <label for="site">Site</label>

@@ -1,0 +1,156 @@
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* background-color: black; */
+}
+
+.flag {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 50vw;
+    object-fit: cover;  /*  flag fills the screen while maintaining aspect ratio */
+    overflow: hidden;   /* Hide any overflow */
+  }
+
+  .red, .blue, .green{
+    height: calc(100vw/3);
+}
+
+  
+  .red {
+    background-color: #EF3340;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+  }
+
+  .au{
+    display: flex;
+    width: 20vw;
+    height: 15vw;
+    position: relative;
+    justify-content: space-between;
+    /* border: solid wheat;
+    background-color: black; */
+  }
+  .ay{
+    /* background-color:aqua; */
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: 1;
+
+
+}
+
+.boyuk{
+
+    background-color: rgb(255, 255, 255);
+
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%; 
+    z-index: 1;
+    position: relative;
+
+
+}
+
+
+.kicik{
+
+
+background-color: #EF3340;
+    width: 12.5vw;  /* 100/8 */
+    height: 12.5vw;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    left: calc(1.25vw + 15vw / 9);
+
+}
+
+
+  .ulduz{
+    /* background-color: blue; */
+    display: flex;
+   
+    width:  calc(100vw/12);
+    height:  calc(100vw/12);
+
+    align-self: center;
+
+    z-index: 5;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+.circle{
+    background-color: rgb(255, 255, 255);
+    /* width: 4.16vw;
+    height: 4.16vw; */
+    width:  calc(100vw/24);
+    height:  calc(100vw/24);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 4;
+}
+
+.spikes{
+    width:  calc(100vw/12);
+    height:  calc(100vw/12);
+    background-color: rgb(255, 255, 255);
+
+    z-index: 3;
+    clip-path: polygon(50% 0%,
+            40.433% 26.90%,
+            14.64% 14.64%,
+            26.90% 40.433%,
+            0% 50%,
+            26.90% 59.567%,
+            14.64% 85.36%,
+            40.433% 73.1%,
+            50% 100%,
+            59.567% 73.1%,
+            85.36% 85.36%,
+            73.1% 59.567%,
+            100% 50%,
+            73.1% 40.433%,
+            85.36% 14.64%,
+            59.567% 26.90%);
+}
+
+
+  
+  .red {
+    background-color: #EF3340;
+    position: relative; /* Needed to position the crescent and star */
+  }
+  
+
+
+
+
+div.blue{
+    background-color: #00B5E2;
+}
+.red{
+    background-color:  #EF3340;
+}
+
+.green{
+    background-color: #509E2F;
+}

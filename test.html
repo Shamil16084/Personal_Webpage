@@ -6,15 +6,80 @@
     <link rel="stylesheet" href="style.css">
 
     <title>Document</title>
+
+    <style>
+        table,th,tr,td{
+            border: solid bisque;
+            border-collapse: collapse;
+            width: 50%;
+            height: 50px;
+            padding: 10px;
+            vertical-align: middle;
+       
+        }
+        th{
+            background-color: rgb(142, 192, 142);
+        }
+
+        tr:nth-child(odd){
+            background-color:rgb(121, 151, 151);
+        }
+
+
+        tr:hover{
+            background-color:rgb(254, 103, 169);
+            font-weight: bold;
+            font-style: italic;
+        }
+        /* th:hover{
+            background-color:rgb(254, 103, 169);
+            font-weight: bold;
+            font-style: italic;
+        } */
+      
+
+     
+    </style>
 </head>
 <body>
 
     <h2>Education</h2>
-    <a href="https://www.ada.edu.az/en" target="_blank">ADA university</a> <br>
-    <em>BSIT 26 </em> <br>
+    <div style="overflow-x:auto;">
+    <table>
 
-    <a href="https://www.metu.edu.tr/" target="_blank">METU university</a> <br>
-    <em>Exchange Student</em>
-    
+        <thead>
+
+            <th>Education</th>
+            <th>Year</th>
+        </thead>
+
+        <tr>
+            <td>
+                <a href="https://www.ada.edu.az/en" target="_blank">ADA university</a>
+            </td>
+            <td>2021-2026</td>
+        </tr>
+
+        <tr>
+
+
+            <td> 
+                <a href="https://www.metu.edu.tr/" target="_blank">METU university</a> </td>
+                <td>2023 Exchange Student</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Young Talants Lyceyum</td>
+            <td>2015-2021</td>
+
+        </tr>
+
+
+    </table>
+</div>
+
+   
 </body>
 </html>

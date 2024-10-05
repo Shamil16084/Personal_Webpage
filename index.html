@@ -10,7 +10,7 @@
  img#pro{
     width: 200px;
     height: 200px;
-    border-radius: 100px;
+    border-radius: 50%;
 
     transition: transform 0.6s ease;
  }
@@ -21,6 +21,28 @@
 
     transform: rotate(360deg);
 
+ }
+
+ dl,dt{
+    background-color:   #3399ff;
+    font-weight: bold;
+    list-style-type: decimal;
+
+ }
+ dt{
+    color: gainsboro;
+ }
+
+ dt::before {
+    content: " * "; 
+}
+ dd{
+    background-color: rgb(128, 179, 224);
+    font-weight: lighter;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+   
  }
 
     </style>
@@ -72,16 +94,16 @@
    <dl>
 
     <dt>Computer Networks</dt>
-    <dd style="font-style: italic; font-size: small;">Tcp/IP</dd>
-    <dd  style="font-style: italic; font-size: small;">Device Configuration</dd>
+    <dd >Tcp/IP</dd>
+    <dd  >Device Configuration</dd>
 
     <dt>Programming</dt>
-    <dd  style="font-style: italic; font-size: small;">Java</dd>
-    <dd  style="font-style: italic; font-size: small;">C++</dd>
+    <dd  >Java</dd>
+    <dd >C++</dd>
 
     <dt >Security Principles</dt>
-    <dd  style="font-style: italic; font-size: small;">CIA Triad</dd>
-    <dd  style="font-style: italic; font-size: small;">Penetration testing</dd>
+    <dd  >CIA Triad</dd>
+    <dd  >Penetration testing</dd>
 
 
    </dl>

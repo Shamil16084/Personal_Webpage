@@ -1,0 +1,83 @@
+
+body{
+    background-color: rgb(214, 220, 220);
+  
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight:normal;
+    /* font-variant: small-caps; */
+    width:90%;
+    margin: auto;
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 4px;
+  }
+
+input[type=text],
+input[type=email],
+input[type=email]::placeholder,
+input[type=text]::placeholder
+{
+    width: 100%;
+    height: 10%;
+    box-sizing: border-box;
+    /* border: solid rgb(138, 14, 14); */
+    background-color: rgb(219, 255, 219);
+    color: rgb(0, 0, 0);
+    border-collapse: collapse;
+    border-radius: 7%; /* Smooth corners */
+    padding: 10px; 
+    outline: none;
+   
+}
+
+
+input[type=email]:focus,
+input[type=text]:focus{
+    background-color: rgb(228, 157, 157);
+
+}
+input[type=date]{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(165, 165, 165);
+    border: 2px solid rgb(152, 131, 89);
+    color: rgb(32, 23, 5);
+    border-radius: 7%;
+}
+
+input[type-date]:focus{
+    border: 2px solid rgb(255, 0, 0); /* Change border color on focus */
+    background-color: rgb(200, 200, 200); /* Lighter background on focus */
+    color: rgb(0, 0, 0); /* Text color changes on focus */
+}
+
+
+.g{
+    width: 50%;
+    height: 10%;
+    background-color: rgb(235, 55, 55);
+    border: 2px solid rgb(51, 48, 41);
+    color: rgb(32, 23, 5);
+    border-radius: 7%;
+}
+
+textarea{
+    width: 29%;
+    height: 10%;
+    resize: none;
+}
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: solid red;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+  }
