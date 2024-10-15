@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+
+
+    <style>
+
+div.all{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* margin:auto; */
+
+}
+
+div.a {
+    flex: 0 1 calc(33.33% - 10px); /* 3 items per row, with a 10px gap subtracted */
+    box-sizing: border-box;   
+      
+}
+
+   /* Images should fill their container */
+   div.a img {
+            width: 100%;    /* Make image take up the full width of the container */
+            height: auto; 
+            /* max-height: 300px;  Maintain aspect ratio */
+            max-width: 100%;
+            transition: transform 0.3s ease; /* Smooth hover effect */
+            display: block;
+            object-fit: cover;
+        }
+        div.a img:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+
+        /* Responsive layout: 2 items per row on smaller screens */
+        @media (max-width: 768px) {
+            div.a {
+                flex: 1 1 calc(50% - 10px); /* 2 items per row on smaller screens */
+            }
+        }
+
+        /* Responsive layout: 1 item per row on very small screens */
+        @media (max-width: 480px) {
+            div.a {
+                flex: 1 1 100%; /* Full-width images on very small screens */
+            }
+        }
+    
+        div.a:last-child {
+            height: 10px;
+            flex: 0 1 100%; /* Make the last item take the entire row */
+       
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="all">
+
+        <div class="a">
+            <img src="https://picsum.photos/200/300" alt="Photo1">
+        </div>
+        <div class="a">
+            <img src="https://picsum.photos/200/300" alt="Photo2">
+        </div>
+        <div class="a">
+            <img src="https://picsum.photos/200/300" alt="Photo3">
+        </div>
+        <div class="a">
+            <img src="https://picsum.photos/200/300" alt="Photo4">
+        </div>
+
+        <div class="a">
+            <img src="https://picsum.photos/200/300" alt="Photo5">
+        </div>
+
+        <div class="a">
+            <img src="https://picsum.photos/200/300" alt="Photo6">
+        </div>
+
+        <div class="a">
+            <img src="https://picsum.photos/200/300" alt="Photo7">
+        </div>
+     
+
+
+
+    </div>
+
+
+</body>
+</html>

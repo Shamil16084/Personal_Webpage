@@ -16,3 +16,43 @@ hr{
     margin: auto;
     border-top: 3px solid red;
 }
+
+div.nav{
+
+    display: flex;
+    background-color:rgb(151, 137, 137);
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    width: 100%;       
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+ 
+  }
+  div.nav a{
+    color: #000000;
+    font-weight: 500;
+    font-style: italic;
+    transition: background-color 0.3s ease;
+    /* padding: 10px 15px;   */
+ 
+  }
+  .nav a:hover{
+    background-color: #ddd;  /* Background change on hover */
+    border-radius: 5px;
+  }
+ 
+  #active{
+    /* background-color: #000000;   Different background for active link */
+    color: #fff;              /* White text for active link */
+    /* pointer-events: none;  */
+  }
+ 
+  #active:hover {
+    background-color: #333;   /* No change on hover */
+    /* color: #000000;              No change on hover */
+ }
+  
