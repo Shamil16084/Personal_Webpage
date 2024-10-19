@@ -116,3 +116,188 @@
 // for(let i =0 ;i< input.length;i++){
 //     console.log(input.slice(0,i) + "_" + input.slice(i, input.length+1));
 // }
+
+
+
+// function fib(a ,b){
+
+//     let arr= [];
+//     arr[0]=0;
+//     arr[1]=1;
+//     arr[2]=1;
+
+//     for(let i=3;i<=b;i++){
+//         arr[i] = arr[i-1] + arr[i-2];
+//         // if(arr[i]>=b) break;
+//     }
+// let res = [];
+//     for(let  i= a;i<=b;i++)
+// {
+//     res.push(arr[i]);
+// }
+// return res;
+// }
+
+// console.log(fib(3,6));
+
+
+
+// function rdm(a,b,n){
+//     let arr = [];
+
+//     for(let i=0;i<n;i++){
+//         let x = Math.floor(Math.random()*(b-a+1) + a );
+//         arr.push(x);
+//     }
+//     return arr; // Re
+// }
+
+// console.log(rdm(12,100,4));
+// 
+//  function count(arr){
+//     let res={};
+//         for(let  i=0;i<arr.length;i++){
+//             let num = arr[i].toString();
+//                 if(num in res){
+//                     res[num] +=1;
+//                 }else{
+//                     res[num] =1;
+//                 }
+//         }
+
+//         return res;
+        
+//     }
+
+//     // console.log(count(1,2,3,4,2,3));
+
+//     let ans = count(1,2,3,4,1,2,2,3,5);
+
+// //   console.log(ans);
+
+//    function print(ans){
+//     for (const [key, value] of Object.entries(ans)) {
+//         console.log(`${key} repeated  ${value} times`);
+//       }
+      
+//    }
+// // print(ans);
+//    function combine(a,b,n){
+
+//     let arr = rdm(a,b,n);
+//     console.log("Generated random numbers:", arr); // Print generated numbers
+//     // let dd = arr.split(',');
+    
+//     // console.log("dd is printed: " + dd);
+
+//     let ans = count(arr); // Count occurrences of each number
+//     print(ans); // Print the result
+//     //    print(count(rdm(a,b,n)));
+//     }
+
+//     combine(1,10,9);
+        
+
+// function Person(firstname, lastname, gpa, age, gender){
+
+//     this._firstname = firstname;
+  
+//     this._lastname = lastname;
+  
+//     this._gpa = gpa;
+  
+//     this._age = age;
+//     this._gender = gender;
+  
+//     this.getGender = function(){return this._gender;}
+  
+//   }
+
+//   let persons = [new Person("Shamil", "Abbasov", 4,20,"Male"),new Person("Shamil2", "Abbasov", 4,20,"Female"),new Person("Shamil3", "Abbasov", 4,20,"Male"),
+//     new Person("Shamil4", "Abbasov", 4,20,"Female"), new Person("Shamil5", "Abbasov", 4,20,"Male") ];
+
+//    res =  persons.filter((x) => (x._gender =="Male"));
+// for(let x in res){
+//     console.log(res[x]._firstname);
+//     console.log(res[x]);
+// }
+
+
+// let res = [1,2,3,4,5,6,7];
+
+// res.reduce(tes)
+
+// function test(max = 999999999, num){
+//     if(max < num ) num =max;
+    
+// }
+
+
+// function nrm(name){
+//     name = name.trim();
+//    return  name.substring(0,1).toUpperCase() + name.substring(1).toLowerCase();
+// }
+
+// // console.log(nrm("      shamil abbasof      "));
+
+
+
+// function nrw(name){
+//     let res = [];
+
+//     name = name.trim();
+//     res = name.split(" ");
+
+//     console.log(res);
+//     let ans = [];
+
+//    for(let y of res){
+    
+//     for(let i =0; i<y.length; i+=2){
+//     //     console.log(
+//     //         y.substring(i,i+2));
+
+//     // }
+
+//             // console.log(nrm(y.substring(i,i+2)));
+//             ans.push(nrm(y.substring(i,i+2)));
+
+//    }
+//    ans.push(" ");
+//    }
+// //    console.log(ans.join('').trim());
+//    return ans.join('').trim();
+// }
+
+// console.log(nrw("abcd efgh ijklm"));
+// // console.log("aa");
+
+let list = ["alma", "armud", "test", "fiber","love"];
+
+function wordle(){
+
+    let counter = 5;
+
+    let word = list[Math.floor(Math.random() * 5)];
+
+    for(let i = 0; i < counter ; i++){
+        
+       let input = prompt("Please enter a value: You have " + (counter -i ) + " chances : ");
+       if(input==word){
+        console.log("Great: Word is " + word + " you find it in " + (i) + ' try');
+        break;
+       }else{
+        console.log("Try again:");
+       }
+
+
+
+
+    }
+
+
+     console.log("Lose: Word is " + word + " you can not find it in " +counter + ' try');
+
+}
+
+wordle();
