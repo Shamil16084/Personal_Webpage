@@ -5,6 +5,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
 
+
     <style>
 
  img#pro{
@@ -60,6 +61,70 @@
 
 
     </style>
+
+    <script defer>
+
+document.addEventListener("DOMContentLoaded",function(){
+
+   let x = document.getElementById("time");
+
+const hour = new Date().getHours();
+let mes ;
+if(hour >=5 && hour <=12 ){
+   mes = "Good Morning";
+}else if(hour >=12 && hour <=18 ){
+   mes = "Good Afternoon";
+}else{
+   
+   mes = "Good Evening";
+}
+
+
+x.textContent = mes; 
+
+});
+     
+
+function show(){
+   let time = new Date();
+   let hour = time.getHours();
+   let min = time.getMinutes();
+
+   let sec = time.getSeconds();
+
+   const el = document.getElementById("now");
+
+   const str = "Current Time:" + hour + ": " + min +": " + sec;
+
+   el.innerHTML = str;
+
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+            let el = document.getElementById("but");
+            el.addEventListener("click", show); // Add the click event to the button
+        });
+
+
+document.addEventListener("DOMContentLoaded", function(){
+
+   let el = document.querySelectorAll(".nav a");
+
+el.forEach((a,index) => {
+   if(index%2==0){
+      a.style.fontStyle = "italic";
+      
+   }else{
+      a.style.fontWeight = "bold";
+
+   }
+})
+
+
+});
+
+
+    </script>
 </head>
 
 
@@ -67,6 +132,9 @@
     <!-- Just to test-->
     <h2 style="text-align: center; background-color: blue; color: blanchedalmond ;">Shamil Abbasov</h2> 
 
+    <h3 id="time" style="margin: 20px; text-align: center; background-color: cadetblue;">dssdkk</h3>
+   <h4 id="now">Current time:</h4>
+   <button id="but">Show</button>
     <div class="bio">
       <img   id="pro" src="C:\Users\TUF DASH\Downloads\me.jpg" alt="Profile Picture" >
 

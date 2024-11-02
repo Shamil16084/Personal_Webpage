@@ -1,0 +1,20 @@
+#container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon{
+
+    font-size: 4rem;
+    /* margin: 10px 0px; */
+    color: rgb(109, 38, 196);
+}
+
+#round{
+    margin-left: 50%;
+
+    display: inline;
+    background-color: rgb(255, 22, 22);
+    color: rgb(9, 16, 2);
+    font-weight: bold;
+}

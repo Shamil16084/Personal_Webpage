@@ -301,3 +301,40 @@ function wordle(){
 }
 
 wordle();
+
+// Map to store available operators and their corresponding functions
+const operatorsMap = {
+    '+': (a, b) => a + b,
+    '-': (a, b) => a - b,
+    '*': (a, b) => a * b,
+    '/': (a, b) => (b !== 0 ? a / b : 'Division by zero error'),
+    '%': (a, b) => a % b,
+    '**': (a, b) => a ** b
+  };
+  
+  // Function to evaluate the expression
+  function evaluateExpression(operator, operand1, operand2) {
+    // Check if the operator exists in the operatorsMap
+    if (operatorsMap[operator]) {
+      // If valid, perform the operation using the appropriate function
+      return operatorsMap[operator](operand1, operand2);
+    } else {
+      // Default to sum operation if operator is not supported
+      console.log(`Unsupported operator "${operator}". Defaulting to sum.`);
+      return operatorsMap['+'](operand1, operand2);
+    }
+  }
+  
+  // Example usage:
+  const operand1 = 10;
+  const operand2 = 5;
+  
+  // Test with different operators
+  console.log(evaluateExpression('+', operand1, operand2));  // 15
+  console.log(evaluateExpression('-', operand1, operand2));  // 5
+  console.log(evaluateExpression('*', operand1, operand2));  // 50
+  console.log(evaluateExpression('/', operand1, operand2));  // 2
+  console.log(evaluateExpression('%', operand1, operand2));  // 0
+  console.log(evaluateExpression('**', operand1, operand2)); // 100000
+  console.log(evaluateExpression('?', operand1, operand2));  // Unsupported operator -> 15 (default sum)
+  
